@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="osj-Pp-deY">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="hhw-0h-v2u">
+            <objects>
+                <viewController id="osj-Pp-deY" customClass="LoginViewController" customModule="PiedraPapelTijera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NGS-e6-oNI"/>
+                        <viewControllerLayoutGuide type="bottom" id="rbP-rU-3g4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a9x-Xl-Sdp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-3D-4V5">
+                                <rect key="frame" x="40" y="238" width="240.5" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa tu nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-P5-EpD">
+                                        <rect key="frame" x="0.0" y="0.0" width="240.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-SX-Sbu">
+                                        <rect key="frame" x="0.0" y="56" width="240.5" height="36"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="osj-Pp-deY" id="1DA-RV-TkN"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊🏼✋🏼✌🏼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ7-a7-x5v">
+                                <rect key="frame" x="31" y="86" width="258" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1m-Tg-12J">
+                                <rect key="frame" x="122.5" y="323" width="75" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok3-fF-KNu">
+                                <rect key="frame" x="85" y="456.5" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.93203407530000004" green="0.31643575429999998" blue="0.263269484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="LL8-uo-n0O"/>
+                                    <constraint firstAttribute="height" constant="50" id="TAR-gT-Q2A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="¡Jugar!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="pasaNombre" action="showViewController:sender:" id="jhT-MP-VA1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25423125331604762" green="0.64215752676252946" blue="0.69785104442970824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xRb-3D-4V5" firstAttribute="top" secondItem="qQ7-a7-x5v" secondAttribute="bottom" constant="56.5" id="KAY-dq-Wm0"/>
+                            <constraint firstItem="f1m-Tg-12J" firstAttribute="top" secondItem="xRb-3D-4V5" secondAttribute="bottom" constant="-7" id="LJE-nj-u8q"/>
+                            <constraint firstItem="Ok3-fF-KNu" firstAttribute="centerX" secondItem="a9x-Xl-Sdp" secondAttribute="centerX" id="LKo-8O-4ma"/>
+                            <constraint firstItem="f1m-Tg-12J" firstAttribute="centerX" secondItem="a9x-Xl-Sdp" secondAttribute="centerX" id="TIk-8Y-Ksh"/>
+                            <constraint firstItem="qQ7-a7-x5v" firstAttribute="centerX" secondItem="a9x-Xl-Sdp" secondAttribute="centerX" id="ed8-10-4Oz"/>
+                            <constraint firstItem="xRb-3D-4V5" firstAttribute="centerY" secondItem="a9x-Xl-Sdp" secondAttribute="centerY" id="gHy-a0-KY5"/>
+                            <constraint firstItem="xRb-3D-4V5" firstAttribute="centerX" secondItem="a9x-Xl-Sdp" secondAttribute="centerX" id="lZx-UK-Mvw"/>
+                            <constraint firstItem="Ok3-fF-KNu" firstAttribute="top" secondItem="f1m-Tg-12J" secondAttribute="bottom" constant="49.5" id="sYv-sf-sBi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jugadorTextField" destination="Wl5-SX-Sbu" id="yAq-2i-yOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBi-MX-EGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871.20000000000005" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiedraPapelTijera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5ka-bH-dht">
+                                <rect key="frame" x="16" y="400.5" width="288" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdC-pm-mvz">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="108"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <state key="normal" title="👊🏼"/>
+                                        <connections>
+                                            <action selector="movimiento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQK-Z9-9Hh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAH-Qv-xUS">
+                                        <rect key="frame" x="101" y="0.0" width="86" height="108"/>
+                                        <fontDescription key="fontDescription" name=".AppleColorEmojiUI" family=".Apple Color Emoji UI" pointSize="80"/>
+                                        <state key="normal" title="✋🏼"/>
+                                        <connections>
+                                            <action selector="movimiento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SyS-6r-Dwr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzr-o9-erf">
+                                        <rect key="frame" x="202" y="0.0" width="86" height="108"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <state key="normal" title="✌🏼"/>
+                                        <connections>
+                                            <action selector="movimiento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKZ-uX-aRD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-kj-Nd1">
+                                <rect key="frame" x="117" y="59.5" width="86" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="🙌🏼"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jorge: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-eL-Wbh">
+                                <rect key="frame" x="128.5" y="528.5" width="63" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máquina: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hau-2c-JL4">
+                                <rect key="frame" x="117.5" y="19" width="85" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpA-gi-pO7">
+                                <rect key="frame" x="127.5" y="242" width="65" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="🌀"/>
+                                <connections>
+                                    <segue destination="osj-Pp-deY" kind="showDetail" id="d28-Tn-9XA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93284461494907167" green="0.39732134588345741" blue="0.42982033642653877" alpha="0.83381662193251538" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hau-2c-JL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="65c-IY-ppA"/>
+                            <constraint firstItem="5ka-bH-dht" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9b-4T-Edt"/>
+                            <constraint firstItem="wpA-gi-pO7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rvw-mZ-pKe"/>
+                            <constraint firstItem="0ar-kj-Nd1" firstAttribute="top" secondItem="hau-2c-JL4" secondAttribute="bottom" constant="20" id="Tw6-sg-5Fj"/>
+                            <constraint firstItem="0ar-kj-Nd1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="bLC-QT-Fvb"/>
+                            <constraint firstItem="5ka-bH-dht" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="eIR-Hs-XO9"/>
+                            <constraint firstItem="rdN-eL-Wbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hlD-yy-hoL"/>
+                            <constraint firstItem="rdN-eL-Wbh" firstAttribute="top" secondItem="5ka-bH-dht" secondAttribute="bottom" constant="20" id="hsi-4D-JWK"/>
+                            <constraint firstItem="0ar-kj-Nd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWh-2B-V17"/>
+                            <constraint firstItem="wpA-gi-pO7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mes-iy-GFD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="manoMaquina" destination="0ar-kj-Nd1" id="e1z-v1-Jth"/>
+                        <outlet property="marcadorJugador" destination="rdN-eL-Wbh" id="iyx-Y7-RFO"/>
+                        <outlet property="marcadorMaquina" destination="hau-2c-JL4" id="P4z-cP-ypG"/>
+                        <outlet property="papelJugador" destination="WAH-Qv-xUS" id="Wxf-mT-8Fc"/>
+                        <outlet property="piedraJugador" destination="ZdC-pm-mvz" id="NEf-Cs-G8e"/>
+                        <outlet property="tijerasJugador" destination="lzr-o9-erf" id="Rxn-sv-Efm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
